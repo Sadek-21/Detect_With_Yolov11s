@@ -1,0 +1,18 @@
+conda activate yolo-env1
+
+
+=====> to run from the esp32-cam
+
+python yolo_detect_move_servo_com.py --model my_model.pt --source http://192.168.3.14:81/stream --resolution 1280x720
+
+
+
+======> to run From Laptop Webcam
+
+python yolo_detect_move_servo_com.py --model my_model.pt --source 0 --resolution 1280x720
+
+
+
+=====> to run From USB Camera 
+
+python yolo_detect.py --model my_model.pt --source usb0 --resolution 1280x720
